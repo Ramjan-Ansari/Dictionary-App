@@ -1,0 +1,100 @@
+:root{
+    --pramry-color: #008080;
+    --text-color:#fff;
+    --border-radiod:5px;
+}
+/* body::-webkit-scrollbar{
+    display: none;
+} */
+body{
+    width: 100%;
+    height: 100vh;
+    background: #eee;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: var(--pramry-color);
+    color: var(--text-color);
+    padding: 20px;
+}
+
+header h1{
+    font-size: 2rem;
+    text-align: center;
+}
+main{
+    padding: 20px;
+    max-width: 800px;
+    height: 79vh;
+    margin: 0 auto;
+}
+main form{
+    display: flex;
+    justify-content: center;
+}
+main form input[type="text"]{
+    flex-grow: 1;
+    margin-right: 2px;
+}
+
+input[type="text"], button[type="submit"]{
+    padding: 10px;
+    border: none;
+    border-radius: var(--border-radiod);
+}
+
+button{
+    color: var(--text-color);
+    background-color: var(--pramry-color);
+    cursor: pointer;
+}
+
+footer p{
+    color:var(--text-color);
+    background-color: var(--pramry-color);
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    font-size: 18px;
+}
+
+.result{
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #fff;
+}
+.result p{
+    margin-top: 10px;
+    font-weight: 400;
+    color: #161616;
+}
+.result p strong{
+    color: #000;
+    font-weight: 600;
+
+}
+
+.result li{
+    margin-left: 10px;
+}
+.partofspeech{
+    font-style: italic;
+}
+
+.result div a{
+    background-color: var(--pramry-color);
+    padding: 5px;
+    color: var(--text-color);
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
